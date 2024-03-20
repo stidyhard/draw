@@ -1,80 +1,113 @@
-<mxfile host="app.diagrams.net" modified="2024-03-20T07:31:14.919Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="wTBkh55BK1Mm-Ze0TBfO" version="24.0.7" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-20T08:01:54.247Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="995wAYku5xqJO_6LFp3r" version="24.0.7" type="github">
   <diagram name="第 1 页" id="wE8Msh8U6or0rRmldTZ4">
-    <mxGraphModel dx="1064" dy="538" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1520" dy="769" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="Of1BTpybml31U4D-7XKG-12" value="&lt;ul style=&quot;line-height: 100%;&quot;&gt;&lt;li&gt;[nOctaves]=num_octaves(image,double_size_image)&lt;/li&gt;&lt;li&gt;[image]=create_initial_image(image,double_image_size,sigma)&lt;/li&gt;&lt;li&gt;[gaussian_pyramid,gaussian_gradient,gaussian_angle]=build_gaussian_pyramid(image,nOctaves,dog_center_layer,sigma)&lt;/li&gt;&lt;li&gt;[dog_pyramid]=build_dog_pyramid(gaussian_pyramid,nOctaves,dog_center_layer)&lt;/li&gt;&lt;li&gt;[key_point_array]=find_scale_space_extream(dog_pyramid,nOctaves,dog_center_layer,contrast_threshold,sigma,edge_threshold,gaussian_gradient,gaussian_angle)&lt;/li&gt;&lt;ul&gt;&lt;li&gt;[key_point,is_local_extream]=adjust_local_extream(dog_pyramid,octaves,layer,r,c,nOctaveLayers,sigma,contrast_threshold,edge_threshold)&lt;/li&gt;&lt;li&gt;[hist,max_value]=calculate_oritation_hist(x,y,scale,gradient,angle,n)&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;[descriptors,locs]=calc_descriptors(gaussian_gradient,gaussian_angle,key_point_array,is_double_size,is_sift_or_log)&lt;/li&gt;&lt;ul&gt;&lt;li&gt;descriptors(i,:)=calc_log_polar_descriptor(temp_gradient,temp_angle,round(x),round(y),scale,main_angle,d,n)&lt;/li&gt;&lt;li&gt;descriptors(i,:)=calc_sift_descriptor(temp_gradient,temp_angle,round(x),round(y),scale,main_angle,d,n)&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;[solution,rmse,cor1,cor2]= match(image2, image1,descriptors2,locs2,descriptors1,locs1,change_form)&lt;/li&gt;&lt;ul&gt;&lt;li&gt;[solution,rmse,cor1,cor2]=FSC(cor1,cor2,change_form,error_t)&lt;br&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;[parameters,rmse]=LSM(cor1,cor2,change_form)&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;li&gt;image_fusion(image_1,image_2,solution)&lt;br&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;[image1,image2,image3]=mosaic_map(img1,img2,grid_size)&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="Of1BTpybml31U4D-7XKG-12" value="&lt;ul style=&quot;line-height: 100%;&quot;&gt;&lt;li&gt;[nOctaves]=num_octaves(image,double_size_image)&lt;/li&gt;&lt;li&gt;[image]=create_initial_image(image,double_image_size,sigma)&lt;/li&gt;&lt;li&gt;[gaussian_pyramid,gaussian_gradient,gaussian_angle]=build_gaussian_pyramid(image,nOctaves,dog_center_layer,sigma)&lt;/li&gt;&lt;li&gt;[dog_pyramid]=build_dog_pyramid(gaussian_pyramid,nOctaves,dog_center_layer)&lt;/li&gt;&lt;li&gt;[key_point_array]=find_scale_space_extream(dog_pyramid,nOctaves,dog_center_layer,contrast_threshold,sigma,edge_threshold,gaussian_gradient,gaussian_angle)&lt;/li&gt;&lt;ul&gt;&lt;li&gt;[key_point,is_local_extream]=adjust_local_extream(dog_pyramid,octaves,layer,r,c,nOctaveLayers,sigma,contrast_threshold,edge_threshold)&lt;/li&gt;&lt;li&gt;[hist,max_value]=calculate_oritation_hist(x,y,scale,gradient,angle,n)&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;[descriptors,locs]=calc_descriptors(gaussian_gradient,gaussian_angle,key_point_array,is_double_size,is_sift_or_log)&lt;/li&gt;&lt;ul&gt;&lt;li&gt;descriptors(i,:)=calc_log_polar_descriptor(temp_gradient,temp_angle,round(x),round(y),scale,main_angle,d,n)&lt;/li&gt;&lt;li&gt;descriptors(i,:)=calc_sift_descriptor(temp_gradient,temp_angle,round(x),round(y),scale,main_angle,d,n)&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;[solution,rmse,cor1,cor2]= match(image2, image1,descriptors2,locs2,descriptors1,locs1,change_form)&lt;/li&gt;&lt;ul&gt;&lt;li&gt;[solution,rmse,cor1,cor2]=FSC(cor1,cor2,change_form,error_t)&lt;br&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;[parameters,rmse]=LSM(cor1,cor2,change_form)&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;li&gt;image_fusion(image_1,image_2,solution)&lt;br&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;[image1,image2,image3]=mosaic_map(img1,img2,grid_size)&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;" vertex="1" parent="1">
           <mxGeometry x="20" y="148" width="970" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="Of1BTpybml31U4D-7XKG-13" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;SIFT(MATLAB)&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=30;" vertex="1" parent="1">
+        <mxCell id="Of1BTpybml31U4D-7XKG-13" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;SIFT(MATLAB)&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=30;labelBackgroundColor=none;" vertex="1" parent="1">
           <mxGeometry x="40" y="38" width="1070" height="270" as="geometry" />
         </mxCell>
-        <mxCell id="Of1BTpybml31U4D-7XKG-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.563;exitY=0.952;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Of1BTpybml31U4D-7XKG-19" target="Of1BTpybml31U4D-7XKG-34">
+        <mxCell id="Of1BTpybml31U4D-7XKG-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.563;exitY=0.952;exitDx=0;exitDy=0;exitPerimeter=0;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="Of1BTpybml31U4D-7XKG-19" target="Of1BTpybml31U4D-7XKG-34">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="500" y="440" />
+              <mxPoint x="400" y="440" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="Of1BTpybml31U4D-7XKG-19" value="&lt;span style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;create_initial_image&lt;/font&gt;&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="410" y="360" width="160" height="40" as="geometry" />
+        <mxCell id="Of1BTpybml31U4D-7XKG-19" value="&lt;span style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;create_initial_image&lt;/font&gt;&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=0;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="310" y="360" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Of1BTpybml31U4D-7XKG-22" value="&lt;span style=&quot;text-align: left;&quot;&gt;calculate_oritation_hist&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="760" y="430" width="160" height="40" as="geometry" />
+        <mxCell id="Of1BTpybml31U4D-7XKG-22" value="&lt;span style=&quot;text-align: left;&quot;&gt;calculate_oritation_hist&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="405" y="560" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Of1BTpybml31U4D-7XKG-23" value="&lt;span style=&quot;text-align: left;&quot;&gt;calc_descriptors&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="670" y="570" width="120" height="40" as="geometry" />
+        <mxCell id="Of1BTpybml31U4D-7XKG-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="Of1BTpybml31U4D-7XKG-23" target="Of1BTpybml31U4D-7XKG-26">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Of1BTpybml31U4D-7XKG-24" value="&lt;span style=&quot;text-align: left;&quot;&gt;calc_log_polar_descriptor&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="640" y="650" width="160" height="40" as="geometry" />
+        <mxCell id="Of1BTpybml31U4D-7XKG-23" value="&lt;span style=&quot;text-align: left;&quot;&gt;calc_descriptors&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="220" y="600" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Of1BTpybml31U4D-7XKG-25" value="&lt;span style=&quot;text-align: left;&quot;&gt;calc_sift_descriptor&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="640" y="710" width="160" height="40" as="geometry" />
+        <mxCell id="Of1BTpybml31U4D-7XKG-24" value="&lt;span style=&quot;text-align: left;&quot;&gt;calc_log_polar_descriptor&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="40" y="580" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Of1BTpybml31U4D-7XKG-26" value="&lt;span style=&quot;text-align: left;&quot;&gt;match&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="380" y="620" width="120" height="40" as="geometry" />
+        <mxCell id="Of1BTpybml31U4D-7XKG-25" value="&lt;span style=&quot;text-align: left;&quot;&gt;calc_sift_descriptor&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="40" y="620" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Of1BTpybml31U4D-7XKG-27" value="&lt;span style=&quot;text-align: left;&quot;&gt;FSC&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="390" y="680" width="120" height="40" as="geometry" />
+        <mxCell id="Of1BTpybml31U4D-7XKG-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="Of1BTpybml31U4D-7XKG-26" target="Of1BTpybml31U4D-7XKG-27">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Of1BTpybml31U4D-7XKG-28" value="&lt;span style=&quot;text-align: left;&quot;&gt;LSM&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="410" y="740" width="120" height="40" as="geometry" />
+        <mxCell id="Of1BTpybml31U4D-7XKG-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="Of1BTpybml31U4D-7XKG-26" target="Of1BTpybml31U4D-7XKG-29">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Of1BTpybml31U4D-7XKG-29" value="&lt;span style=&quot;text-align: left;&quot;&gt;image_fusion&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="870" y="640" width="120" height="40" as="geometry" />
+        <mxCell id="Of1BTpybml31U4D-7XKG-26" value="&lt;span style=&quot;text-align: left;&quot;&gt;match&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="220" y="660" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Of1BTpybml31U4D-7XKG-30" value="&lt;span style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;mosaic_map&lt;/font&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="900" y="700" width="120" height="40" as="geometry" />
+        <mxCell id="Of1BTpybml31U4D-7XKG-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;dashPattern=1 4;strokeWidth=1;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="Of1BTpybml31U4D-7XKG-27" target="Of1BTpybml31U4D-7XKG-28">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Of1BTpybml31U4D-7XKG-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Of1BTpybml31U4D-7XKG-34" target="Of1BTpybml31U4D-7XKG-35">
+        <mxCell id="Of1BTpybml31U4D-7XKG-27" value="&lt;span style=&quot;text-align: left;&quot;&gt;FSC&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="405" y="660" width="65" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Of1BTpybml31U4D-7XKG-28" value="&lt;span style=&quot;text-align: left;&quot;&gt;LSM&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="495" y="660" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Of1BTpybml31U4D-7XKG-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="Of1BTpybml31U4D-7XKG-29" target="Of1BTpybml31U4D-7XKG-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Of1BTpybml31U4D-7XKG-29" value="&lt;span style=&quot;text-align: left;&quot;&gt;image_fusion&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="220" y="720" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Of1BTpybml31U4D-7XKG-30" value="&lt;span style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;mosaic_map&lt;/font&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="405" y="720" width="165" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Of1BTpybml31U4D-7XKG-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="Of1BTpybml31U4D-7XKG-34" target="Of1BTpybml31U4D-7XKG-35">
           <mxGeometry relative="1" as="geometry">
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Of1BTpybml31U4D-7XKG-34" value="&lt;span style=&quot;text-align: left;&quot;&gt;build_gaussian_pyramid&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="320" y="420" width="160" height="40" as="geometry" />
+        <mxCell id="Of1BTpybml31U4D-7XKG-34" value="&lt;span style=&quot;text-align: left;&quot;&gt;build_gaussian_pyramid&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="220" y="420" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Of1BTpybml31U4D-7XKG-35" value="&lt;span style=&quot;text-align: left;&quot;&gt;build_dog_pyramid&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="320" y="480" width="160" height="40" as="geometry" />
+        <mxCell id="Of1BTpybml31U4D-7XKG-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="Of1BTpybml31U4D-7XKG-35" target="Of1BTpybml31U4D-7XKG-36">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Of1BTpybml31U4D-7XKG-36" value="&lt;span style=&quot;text-align: left;&quot;&gt;find_scale_space_extream&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="370" y="540" width="160" height="40" as="geometry" />
+        <mxCell id="Of1BTpybml31U4D-7XKG-35" value="&lt;span style=&quot;text-align: left;&quot;&gt;build_dog_pyramid&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="220" y="480" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Of1BTpybml31U4D-7XKG-37" value="&lt;span style=&quot;text-align: left;&quot;&gt;adjust_local_extream&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="760" y="380" width="120" height="40" as="geometry" />
+        <mxCell id="Of1BTpybml31U4D-7XKG-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="Of1BTpybml31U4D-7XKG-36" target="Of1BTpybml31U4D-7XKG-23">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Of1BTpybml31U4D-7XKG-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Of1BTpybml31U4D-7XKG-38">
+        <mxCell id="Of1BTpybml31U4D-7XKG-36" value="&lt;span style=&quot;text-align: left;&quot;&gt;find_scale_space_extream&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="220" y="540" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Of1BTpybml31U4D-7XKG-37" value="&lt;span style=&quot;text-align: left;&quot;&gt;adjust_local_extream&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="405" y="520" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Of1BTpybml31U4D-7XKG-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="Of1BTpybml31U4D-7XKG-38">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="320" y="440" as="targetPoint" />
+            <mxPoint x="220" y="440" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="300" y="440" />
-              <mxPoint x="320" y="440" />
+              <mxPoint x="200" y="440" />
+              <mxPoint x="220" y="440" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="Of1BTpybml31U4D-7XKG-38" value="&lt;span style=&quot;text-align: left;&quot;&gt;num_octaves&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="230" y="360" width="160" height="40" as="geometry" />
+        <mxCell id="Of1BTpybml31U4D-7XKG-38" value="&lt;span style=&quot;text-align: left;&quot;&gt;num_octaves&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=0;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="130" y="360" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Of1BTpybml31U4D-7XKG-42" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=1;entryDx=0;entryDy=0;dashed=1;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" target="Of1BTpybml31U4D-7XKG-37">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="560" as="sourcePoint" />
+            <mxPoint x="410" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Of1BTpybml31U4D-7XKG-43" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;dashed=1;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="Of1BTpybml31U4D-7XKG-23" target="Of1BTpybml31U4D-7XKG-24">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="670" as="sourcePoint" />
+            <mxPoint x="220" y="619" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
