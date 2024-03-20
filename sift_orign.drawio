@@ -1,20 +1,26 @@
-<mxfile host="app.diagrams.net" modified="2024-03-20T06:49:44.828Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="6bPmMsFOvnnUbYYdouva" version="24.0.7" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-20T06:55:40.066Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="B4M_bid1xqOPLiRrGrwt" version="24.0.7" type="github">
   <diagram name="第 1 页" id="wE8Msh8U6or0rRmldTZ4">
-    <mxGraphModel dx="1891" dy="538" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1520" dy="769" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="Of1BTpybml31U4D-7XKG-1" value="gray image" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="160" y="80" width="120" height="40" as="geometry" />
+          <mxGeometry x="50" y="430" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Of1BTpybml31U4D-7XKG-2" value="num_octaves" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="360" y="80" width="120" height="40" as="geometry" />
+          <mxGeometry x="320" y="580" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Of1BTpybml31U4D-7XKG-10" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="160" y="130" width="120" height="40" as="geometry" />
+        <mxCell id="Of1BTpybml31U4D-7XKG-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="559.5714285714287" as="targetPoint" />
+            <mxPoint x="210" y="560" as="sourcePoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="Of1BTpybml31U4D-7XKG-12" value="&lt;ul style=&quot;line-height: 100%;&quot;&gt;&lt;li&gt;[nOctaves]=num_octaves(image,double_size_image)&lt;/li&gt;&lt;li&gt;[image]=create_initial_image(image,double_image_size,sigma)&lt;/li&gt;&lt;li&gt;[gaussian_pyramid,gaussian_gradient,gaussian_angle]=build_gaussian_pyramid(image,nOctaves,dog_center_layer,sigma)&lt;/li&gt;&lt;li&gt;[dog_pyramid]=build_dog_pyramid(gaussian_pyramid,nOctaves,dog_center_layer)&lt;/li&gt;&lt;li&gt;[key_point_array]=find_scale_space_extream(dog_pyramid,nOctaves,dog_center_layer,contrast_threshold,sigma,edge_threshold,gaussian_gradient,gaussian_angle)&lt;/li&gt;&lt;ul&gt;&lt;li&gt;[key_point,is_local_extream]=adjust_local_extream(dog_pyramid,octaves,layer,r,c,nOctaveLayers,sigma,contrast_threshold,edge_threshold)&lt;/li&gt;&lt;li&gt;[hist,max_value]=calculate_oritation_hist(x,y,scale,gradient,angle,n)&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;[descriptors,locs]=calc_descriptors(gaussian_gradient,gaussian_angle,key_point_array,is_double_size,is_sift_or_log)&lt;/li&gt;&lt;ul&gt;&lt;li&gt;descriptors(i,:)=calc_log_polar_descriptor(temp_gradient,temp_angle,round(x),round(y),scale,main_angle,d,n)&lt;/li&gt;&lt;li&gt;descriptors(i,:)=calc_sift_descriptor(temp_gradient,temp_angle,round(x),round(y),scale,main_angle,d,n)&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;[solution,rmse,cor1,cor2]= match(image2, image1,descriptors2,locs2,descriptors1,locs1,change_form)&lt;/li&gt;&lt;ul&gt;&lt;li&gt;[solution,rmse,cor1,cor2]=FSC(cor1,cor2,change_form,error_t)&lt;br&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;[parameters,rmse]=LSM(cor1,cor2,change_form)&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;li&gt;image_fusion(image_1,image_2,solution)&lt;br&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;[image1,image2,image3]=mosaic_map(img1,img2,grid_size)&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-50" y="220" width="970" height="80" as="geometry" />
+        <mxCell id="Of1BTpybml31U4D-7XKG-12" value="&lt;ul style=&quot;line-height: 100%; font-size: 14px;&quot;&gt;&lt;li&gt;[nOctaves]=num_octaves(image,double_size_image)&lt;/li&gt;&lt;li&gt;[image]=create_initial_image(image,double_image_size,sigma)&lt;/li&gt;&lt;li&gt;[gaussian_pyramid,gaussian_gradient,gaussian_angle]=build_gaussian_pyramid(image,nOctaves,dog_center_layer,sigma)&lt;/li&gt;&lt;li&gt;[dog_pyramid]=build_dog_pyramid(gaussian_pyramid,nOctaves,dog_center_layer)&lt;/li&gt;&lt;li&gt;[key_point_array]=find_scale_space_extream(dog_pyramid,nOctaves,dog_center_layer,contrast_threshold,sigma,edge_threshold,gaussian_gradient,gaussian_angle)&lt;/li&gt;&lt;ul&gt;&lt;li&gt;[key_point,is_local_extream]=adjust_local_extream(dog_pyramid,octaves,layer,r,c,nOctaveLayers,sigma,contrast_threshold,edge_threshold)&lt;/li&gt;&lt;li&gt;[hist,max_value]=calculate_oritation_hist(x,y,scale,gradient,angle,n)&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;[descriptors,locs]=calc_descriptors(gaussian_gradient,gaussian_angle,key_point_array,is_double_size,is_sift_or_log)&lt;/li&gt;&lt;ul&gt;&lt;li&gt;descriptors(i,:)=calc_log_polar_descriptor(temp_gradient,temp_angle,round(x),round(y),scale,main_angle,d,n)&lt;/li&gt;&lt;li&gt;descriptors(i,:)=calc_sift_descriptor(temp_gradient,temp_angle,round(x),round(y),scale,main_angle,d,n)&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;[solution,rmse,cor1,cor2]= match(image2, image1,descriptors2,locs2,descriptors1,locs1,change_form)&lt;/li&gt;&lt;ul&gt;&lt;li&gt;[solution,rmse,cor1,cor2]=FSC(cor1,cor2,change_form,error_t)&lt;br&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;[parameters,rmse]=LSM(cor1,cor2,change_form)&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;li&gt;image_fusion(image_1,image_2,solution)&lt;br&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;[image1,image2,image3]=mosaic_map(img1,img2,grid_size)&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="148" width="970" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Of1BTpybml31U4D-7XKG-13" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;SIFT(MATLAB)&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=30;" vertex="1" parent="1">
+          <mxGeometry x="40" y="38" width="1070" height="270" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
