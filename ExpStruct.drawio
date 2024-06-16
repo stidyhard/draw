@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-06-16T10:36:42.289Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="Efp98hJHaKEI38QWD6IH" version="24.4.4" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-16T10:58:06.691Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="dZSttQR3OjbykBqFxoiX" version="24.4.4" type="github">
   <diagram name="第 1 页" id="RJKPdSWIhoa_XMss9xg4">
-    <mxGraphModel dx="887" dy="448" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1064" dy="538" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -13,20 +13,20 @@
         <mxCell id="WZ_m8tn04QZmBhPAYWbd-8" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;描述符生成&lt;/span&gt;" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="473" y="320" width="200" height="400" as="geometry" />
         </mxCell>
-        <mxCell id="WZ_m8tn04QZmBhPAYWbd-9" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;域处理：&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;相位一致性（结构图）+&lt;/b&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;RTV+Sobel/&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;描述方式：&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;AB-SIFT&lt;/b&gt;&lt;/li&gt;&lt;li&gt;Daisy&lt;/li&gt;&lt;li&gt;HOG&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="WZ_m8tn04QZmBhPAYWbd-8">
+        <mxCell id="WZ_m8tn04QZmBhPAYWbd-9" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;域处理：&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;相位一致性（结构图）+&lt;/b&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;RTV+Sobel/&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;描述方式：&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;AB-SIFT&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;LSS&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Brisk&lt;/b&gt;&lt;/li&gt;&lt;li&gt;Brief&lt;/li&gt;&lt;li&gt;Daisy&lt;/li&gt;&lt;li&gt;CFOG&lt;/li&gt;&lt;li&gt;HOG&lt;/li&gt;&lt;li&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="WZ_m8tn04QZmBhPAYWbd-8">
           <mxGeometry x="10" y="30" width="180" height="360" as="geometry" />
         </mxCell>
         <mxCell id="WZ_m8tn04QZmBhPAYWbd-11" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;特征点匹配&lt;/span&gt;" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="696" y="320" width="200" height="400" as="geometry" />
         </mxCell>
-        <mxCell id="WZ_m8tn04QZmBhPAYWbd-12" value="&lt;ul&gt;&lt;li&gt;&lt;b&gt;相位一致性（结构图）&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;RTV&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Sobel&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="WZ_m8tn04QZmBhPAYWbd-11">
+        <mxCell id="WZ_m8tn04QZmBhPAYWbd-12" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;特征点处理：&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;去除异常点（LLE）&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;描述符处理：&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;POS-ED&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;COS&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;点对匹配：&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;FSC&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;EM&lt;/b&gt;&lt;/li&gt;&lt;li&gt;SSD/NCC/NMI&lt;/li&gt;&lt;li&gt;shape context&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="WZ_m8tn04QZmBhPAYWbd-11">
           <mxGeometry x="10" y="30" width="180" height="360" as="geometry" />
         </mxCell>
         <mxCell id="WZ_m8tn04QZmBhPAYWbd-13" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;图像变换&lt;/span&gt;" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="920" y="320" width="200" height="200" as="geometry" />
+          <mxGeometry x="920" y="320" width="200" height="400" as="geometry" />
         </mxCell>
-        <mxCell id="WZ_m8tn04QZmBhPAYWbd-14" value="&lt;ul&gt;&lt;li&gt;&lt;b&gt;相位一致性（结构图）&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;RTV&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Sobel&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="WZ_m8tn04QZmBhPAYWbd-13">
-          <mxGeometry x="10" y="30" width="180" height="160" as="geometry" />
+        <mxCell id="WZ_m8tn04QZmBhPAYWbd-14" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;整体变换：&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Similarity&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Affine&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Homography&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Sobel&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="WZ_m8tn04QZmBhPAYWbd-13">
+          <mxGeometry x="10" y="30" width="180" height="360" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
