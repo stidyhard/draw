@@ -1,11 +1,32 @@
-<mxfile host="app.diagrams.net" modified="2024-06-16T10:11:23.674Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="S_0kHGlPV_u8odvApDNa" version="24.4.4" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-16T10:27:21.149Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="lHLwXtXgFxuopJt3zcH3" version="24.4.4" type="github">
   <diagram name="第 1 页" id="RJKPdSWIhoa_XMss9xg4">
     <mxGraphModel dx="887" dy="448" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="WZ_m8tn04QZmBhPAYWbd-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="480" y="440" width="120" height="60" as="geometry" />
+        <mxCell id="WZ_m8tn04QZmBhPAYWbd-7" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;特征点检测&lt;/span&gt;" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="242" y="320" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="WZ_m8tn04QZmBhPAYWbd-1" value="&lt;ul&gt;&lt;li&gt;&lt;b&gt;相位一致性（角点图）&lt;/b&gt;&lt;/li&gt;&lt;li&gt;Harris-Laplace&lt;/li&gt;&lt;li&gt;DOG&lt;/li&gt;&lt;li&gt;harr、susan&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="WZ_m8tn04QZmBhPAYWbd-7">
+          <mxGeometry x="10" y="30" width="180" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="WZ_m8tn04QZmBhPAYWbd-8" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;描述符生成&lt;/span&gt;" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="473" y="320" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="WZ_m8tn04QZmBhPAYWbd-9" value="&lt;ul&gt;&lt;li&gt;&lt;b&gt;相位一致性（结构图）&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;RTV&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Sobel&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="WZ_m8tn04QZmBhPAYWbd-8">
+          <mxGeometry x="10" y="30" width="180" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="WZ_m8tn04QZmBhPAYWbd-11" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;特征点匹配&lt;/span&gt;" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="696" y="320" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="WZ_m8tn04QZmBhPAYWbd-12" value="&lt;ul&gt;&lt;li&gt;&lt;b&gt;相位一致性（结构图）&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;RTV&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Sobel&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="WZ_m8tn04QZmBhPAYWbd-11">
+          <mxGeometry x="10" y="30" width="180" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="WZ_m8tn04QZmBhPAYWbd-13" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;图像变换&lt;/span&gt;" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="320" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="WZ_m8tn04QZmBhPAYWbd-14" value="&lt;ul&gt;&lt;li&gt;&lt;b&gt;相位一致性（结构图）&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;RTV&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Sobel&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="WZ_m8tn04QZmBhPAYWbd-13">
+          <mxGeometry x="10" y="30" width="180" height="160" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
