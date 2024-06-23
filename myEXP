@@ -1,10 +1,10 @@
-<mxfile host="app.diagrams.net" modified="2024-06-23T08:29:23.499Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="w3bO4c9O_ydYvFCtTVAS" version="24.5.4" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-23T08:40:25.227Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="u2NWR6IIkOc4XQQhuXLc" version="24.5.4" type="github">
   <diagram name="第 1 页" id="OMGkK3bThtcb5tXcRImA">
     <mxGraphModel dx="1859" dy="974" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="9_IUWtLZoGR70Tbj1StM-24" value="OPT图" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+        <mxCell id="9_IUWtLZoGR70Tbj1StM-24" value="OPT图" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="210" y="70" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="9_IUWtLZoGR70Tbj1StM-26" value="SAR图" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
@@ -110,6 +110,9 @@
         <mxCell id="9_IUWtLZoGR70Tbj1StM-68" value="根据角点尺度与角点位置，确定在位置和尺度分布均匀的特征点" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="360" y="482" width="240" height="40" as="geometry" />
         </mxCell>
+        <mxCell id="9_IUWtLZoGR70Tbj1StM-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="9_IUWtLZoGR70Tbj1StM-69" target="9_IUWtLZoGR70Tbj1StM-78">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="9_IUWtLZoGR70Tbj1StM-69" value="根据特征点和尺度信息，使用最小动量法确定主方向，使用BEBLID在结构图上提取二进制描述符" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="648" y="261" width="240" height="59" as="geometry" />
         </mxCell>
@@ -146,6 +149,21 @@
               <mxPoint x="620" y="290" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="9_IUWtLZoGR70Tbj1StM-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="9_IUWtLZoGR70Tbj1StM-78" target="9_IUWtLZoGR70Tbj1StM-79">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9_IUWtLZoGR70Tbj1StM-78" value="使用双向余弦距离进行点配对，再利用局部线性嵌入LLE算法剔除潜在的异常匹配点对" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="648" y="340" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9_IUWtLZoGR70Tbj1StM-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="9_IUWtLZoGR70Tbj1StM-79" target="9_IUWtLZoGR70Tbj1StM-82">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9_IUWtLZoGR70Tbj1StM-79" value="使用快速一致性算法FSC来进行粗匹配，计算点对集的位置偏移误差、旋转角度误差、尺度变化误差，来构建POS余弦距离，进行精匹配。" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="648" y="398" width="240" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="9_IUWtLZoGR70Tbj1StM-82" value="使用匹配点对映射图像局部变换，得到分块图像变换结果" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="480" width="240" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
