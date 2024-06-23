@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-23T08:25:29.853Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="SxpLbhJhCnpK7AaEX8lv" version="24.5.4" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-23T08:29:23.499Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="w3bO4c9O_ydYvFCtTVAS" version="24.5.4" type="github">
   <diagram name="第 1 页" id="OMGkK3bThtcb5tXcRImA">
     <mxGraphModel dx="1859" dy="974" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -33,7 +33,7 @@
           <mxGeometry x="60" y="40" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="9_IUWtLZoGR70Tbj1StM-56" value="PC最大矩图(结构)" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="80" y="258" width="240" height="302" as="geometry" />
+          <mxGeometry x="80" y="258" width="240" height="282" as="geometry" />
         </mxCell>
         <mxCell id="9_IUWtLZoGR70Tbj1StM-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=70;exitDy=30;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="9_IUWtLZoGR70Tbj1StM-56" source="9_IUWtLZoGR70Tbj1StM-49" target="9_IUWtLZoGR70Tbj1StM-55">
           <mxGeometry relative="1" as="geometry" />
@@ -105,13 +105,13 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="9_IUWtLZoGR70Tbj1StM-66" value="结合&lt;b&gt;角点和结构图&lt;/b&gt;估计角点尺度" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="360" y="414" width="240" height="40" as="geometry" />
+          <mxGeometry x="360" y="417" width="240" height="40" as="geometry" />
         </mxCell>
         <mxCell id="9_IUWtLZoGR70Tbj1StM-68" value="根据角点尺度与角点位置，确定在位置和尺度分布均匀的特征点" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="360" y="479" width="240" height="40" as="geometry" />
+          <mxGeometry x="360" y="482" width="240" height="40" as="geometry" />
         </mxCell>
         <mxCell id="9_IUWtLZoGR70Tbj1StM-69" value="根据特征点和尺度信息，使用最小动量法确定主方向，使用BEBLID在结构图上提取二进制描述符" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="360" y="541" width="240" height="59" as="geometry" />
+          <mxGeometry x="648" y="261" width="240" height="59" as="geometry" />
         </mxCell>
         <mxCell id="9_IUWtLZoGR70Tbj1StM-70" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="9_IUWtLZoGR70Tbj1StM-32">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -125,23 +125,26 @@
         <mxCell id="9_IUWtLZoGR70Tbj1StM-71" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="480" y="380" as="sourcePoint" />
-            <mxPoint x="480" y="410" as="targetPoint" />
+            <mxPoint x="479.41" y="417" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="9_IUWtLZoGR70Tbj1StM-72" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="9_IUWtLZoGR70Tbj1StM-66" target="9_IUWtLZoGR70Tbj1StM-68">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="300" y="490" as="sourcePoint" />
-            <mxPoint x="350" y="440" as="targetPoint" />
+            <mxPoint x="300" y="493" as="sourcePoint" />
+            <mxPoint x="350" y="443" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="480" y="470" />
+              <mxPoint x="480" y="473" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="9_IUWtLZoGR70Tbj1StM-73" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="9_IUWtLZoGR70Tbj1StM-68" target="9_IUWtLZoGR70Tbj1StM-69">
+        <mxCell id="9_IUWtLZoGR70Tbj1StM-73" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="9_IUWtLZoGR70Tbj1StM-68" target="9_IUWtLZoGR70Tbj1StM-69">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="490" y="464" as="sourcePoint" />
-            <mxPoint x="490" y="489" as="targetPoint" />
-            <Array as="points" />
+            <mxPoint x="490" y="454" as="sourcePoint" />
+            <mxPoint x="490" y="479" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="620" y="502" />
+              <mxPoint x="620" y="290" />
+            </Array>
           </mxGeometry>
         </mxCell>
       </root>
